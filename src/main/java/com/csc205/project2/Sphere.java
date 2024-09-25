@@ -1,6 +1,10 @@
 package com.csc205.project2;
 
-public class Sphere {
+/*
+Generate a Sphere class. include methods for surface area and volume. include a tostring method. include getters/setters as appropriate
+ */
+
+public class Sphere extends Shape {
 
     private double radius;
 
@@ -32,10 +36,10 @@ public class Sphere {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Sphere {");
-        sb.append("radius=").append(radius);
-        sb.append(", surface area=").append(surfaceArea());
-        sb.append(", volume=").append(volume());
+        final StringBuilder sb = new StringBuilder("Sphere { ");
+        sb.append("radius = ").append(radius);
+        sb.append(", surface area = ").append(surfaceArea());
+        sb.append(", volume = ").append(volume());
         sb.append('}');
         return sb.toString();
     }
